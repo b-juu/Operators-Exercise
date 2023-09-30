@@ -2,8 +2,17 @@
 {
     public class Program
     {
+
+
+
+
         static void Main(string[] args)
         {
+
+
+            // Exercise 1
+
+
             int a = 17;
             int b = 4;
 
@@ -23,6 +32,28 @@
 
 
             }
+            // Exercise 2
+
+            Console.WriteLine("What is the radius of your circle?");
+            var radius = double.Parse(Console.ReadLine());
+            Console.WriteLine($"The area of a circle with radius of {radius} is {AreaOfCircle(radius)}.");
+
+
+
+
+
+
+
+
+
+
+        }
+
+            public static double AreaOfCircle(double radius)
+        {
+            var area = Math.PI * Math.Pow(radius, 2);
+            return area;
         }
     }
 }
+
